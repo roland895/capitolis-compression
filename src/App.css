@@ -1,0 +1,36 @@
+.App {
+  
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.half {
+  width: calc(50% - 6px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid div:nth-child(3n+2){
+  border-right: 2px solid black
+}
+.grid div:nth-child(3n+1){
+  border-right: 2px solid black
+}
+.grid div:nth-child(-n+3){
+  border-bottom: 2px solid black
+}
+.grid div{
+  padding: 4px;
+}
+.buttonWrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.buttonWrapper button{
+  margin: 0px 10px;
+}
